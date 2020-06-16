@@ -16,7 +16,7 @@ def summing():
         a = int(request.form['a'])
         b = int(request.form['b'])
 
-        return render_template('result.html', sum=a+b)
+        return render_template('result.html', sum=a+b, username=username)
 
 if __name__ == "__main__":
 	app.run(debug=True)
